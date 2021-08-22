@@ -1,5 +1,5 @@
 {% extends 'basic.html' %}
-{% block title %} Index Page {% endblock %}
+{% block title %} Product Page {% endblock %}
 {% block css %}
 <style>
 .col-md-3
@@ -54,7 +54,7 @@ padding-right: 0;
 
     {% for product, range, nSlides in allProds %}
 
-    <h5 class="my-4">Flash Sale on {{product.0.category}} - Recommended Items</h5>
+    <h5 class="my-4">{{product.0.category}}</h5>
     <div class="row my-flex-card">
         <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
             <ul class="carousel-indicators">

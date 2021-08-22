@@ -1,0 +1,8 @@
+Use merchant id and key provided to you by paytm in productions
+
+
+
+where to enter the merchant id:
+
+1.)in views.py -> param_dict
+2

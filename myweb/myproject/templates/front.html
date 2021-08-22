@@ -1,0 +1,252 @@
+{% extends 'basic.html' %}
+
+{% block title %}Front Page{% endblock %}
+
+{% block css %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'assets/css/feedback.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,700">
+
+<style>
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#tb1,#tb2,#tb3{
+font-family: Quicksand;
+font-size: 80px;
+color: #ffffff;
+}
+
+#slogan1,#slogan2,#slogan3{
+font-family: Quicksand;
+font-size: 40px;
+color: #ffffff;
+}
+
+.grid-container {
+    justify-content:center;
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    padding: 80px;
+}
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    color: #464449;
+    border: 2px solid #464449;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Quicksand;
+}
+a:hover {
+color: #FFCC00
+}
+
+</style>
+{% endblock %}
+
+{% block body %}
+
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="view">
+                <img class="d-block w-100"
+                     src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=856&q=80"
+                     height="670px" width="1519px"
+                     alt="First slide">
+                <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="centered">
+                <h1 id="tb1" class="h3-responsive">Toast And Berries </h1>
+                <p>
+                <h3 id="slogan1">"We Serve Only Fresh"</h3></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+                <img class="d-block w-100" src="https://wallpaperaccess.com/full/986763.jpg"
+                     height="670px" width="1519px"
+                     alt="Second slide">
+                <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="centered">
+                <h1 id="tb2" class="h3-responsive">Toast And Berries </h1>
+                <p>
+                <h3 id="slogan2">"We Serve Only Fresh"</h3></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+                <img class="d-block w-100"
+                     src="https://media.istockphoto.com/photos/chocolate-cake-with-chocolate-fudge-drizzled-icing-and-chocolate-picture-id478348860?k=6&m=478348860&s=612x612&w=0&h=zW3WKJixPivGvfw-85Qk-JQECDRcMHvIJ7gN2uccbi4="
+                     height="670px" width="1519px"
+                     alt="Third slide">
+                <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="centered">
+                <h1 id="tb3" class="h3-responsive">Toast And Berries </h1>
+                <p>
+                <h3 id="slogan3">"We Serve Only Fresh"</h3></p>
+            </div>
+        </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+
+
+<div class="grid-container my-4 mx-5">
+    <div class="grid-item"><a href="#" style="color:#464449; text-decoration: none;" >Best Sellers</a></div>
+    <div class="grid-item"><a href="#" style="color:#464449; text-decoration: none;">Deserts</a></div>
+    <div class="grid-item"><a href="#" style="color:#464449; text-decoration: none;">Cakes</a></div>
+    <div class="grid-item"><a href="#" style="color:#464449; text-decoration: none;">Cookies & Brownies</a></div>
+    <div class="grid-item"><a href="#" style="color:#464449; text-decoration: none;">Breads & Savoury</a></div>
+</div>
+
+<section>
+	<div class="customer-feedback">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8">
+					<div>
+						<h2 class="section-title">What Clients Say</h2>
+					</div>
+				</div><!-- /End col -->
+			</div><!-- /End row -->
+
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+					<div class="owl-carousel feedback-slider">
+
+						<!-- slider item -->
+						<div class="feedback-slider-item">
+							<h3 class="customer-name">Mrityunjay</h3>
+					<p>We would like to send you our heartfelt thanks and regards for
+						taking out the time from your busy schedule and reviewing us.
+						We are extremely sorry you had a bad experience and promise to improve on our performance.</p>
+					<span class="light-bg customer-rating" data-rating="5">
+								5
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+						<!-- /slider item -->
+
+						<!-- slider item -->
+						<div class="feedback-slider-item">
+							<h3 class="customer-name">Vikrant</h3>
+							<p>We are grateful to you as you mentioned the high
+								quality of our services in the past in your review.
+								We are sorry that your expectations were not matched by us on your last visit.
+								We will make sure that our faults are rectified.</p>
+							<span class="light-bg customer-rating" data-rating="4">
+								4
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+						<!-- /slider item -->
+
+						<!-- slider item -->
+						<div class="feedback-slider-item">
+							<h3 class="customer-name">Makrand</h3>
+							<p>I would like to thank you on behalf of everyone
+								from the organization for reviewing us. Your opinions
+								are of the utmost importance to us and we will definitely
+								keep in mind everything that you had to say about our business.</p>
+							<span class="light-bg customer-rating" data-rating="5">
+								5
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+						<!-- /slider item -->
+
+					</div><!-- /End feedback-slider -->
+
+					<!-- side thumbnail -->
+					<div class="feedback-slider-thumb hidden-xs">
+						<div class="thumb-prev">
+							<span>
+							</span>
+							<span class="light-bg customer-rating">
+								5
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+
+						<div class="thumb-next">
+<!--							<span>-->
+<!--							</span>-->
+							<span class="light-bg customer-rating">
+								4
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+					</div>
+					<!-- /side thumbnail -->
+
+				</div><!-- /End col -->
+			</div><!-- /End row -->
+		</div><!-- /End container -->
+	</div><!-- /End customer-feedback -->
+</section>
+
+
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'assets/js/feedback.js' %}" rel="stylesheet"></script>
+<!--<script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $("#popbox").hide();
+    $("#popcart").hide();
+</script>
+<script>
+    $('.carousel').carousel({
+      interval: 3000
+    })
+</script>
+
+{% endblock %}
